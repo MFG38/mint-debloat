@@ -9,6 +9,7 @@ echo -- hypnotix
 echo -- redshift
 echo -- rhythmbox
 echo -- thunderbird
+echo -- warpinator
 echo -- youtube-dl
 echo Double-check that you do not need any of the above packages
 echo before proceeding.
@@ -18,8 +19,8 @@ read -p "Y+Enter to proceed or N+Enter to cancel." CHOICE
 
 if [ ${CHOICE} == y ]
 then
-    sudo apt remove celluloid ed hexchat hexchat-common hypnotix redshift rhythmbox thunderbird youtube-dl
-    sudo apt purge celluloid ed hexchat hexchat-common hypnotix redshift rhythmbox thunderbird youtube-dl
+    sudo apt remove celluloid ed hexchat hexchat-common hypnotix redshift rhythmbox thunderbird warpinator youtube-dl
+    sudo apt purge celluloid ed hexchat hexchat-common hypnotix redshift rhythmbox thunderbird warpinator youtube-dl
 elif [ ${CHOICE} == n ]
 then
     echo Debloating cancelled.
